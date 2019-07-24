@@ -8,7 +8,9 @@
   },
   "author": "yangtopia@gmail.com",
   "dependencies": {
+    "@zeit/next-css": "^1.0.1",
     "next": "^9.0.2",
+    "normalize.css": "^8.0.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "styled-components": "^4.3.2"
