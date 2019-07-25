@@ -1,17 +1,22 @@
 import React from 'react';
-import App, { Container, AppProps } from 'next/app';
+import App, { Container } from 'next/app';
+import { Provider } from 'react-redux';
+import withRedux, { AppProps } from 'next-redux-wrapper';
+import configureStore from '../src/redux/configureStore';
 import '../style.css';
 
 class MyApp extends App<AppProps> {
   render() {
-    const { Component, pageProps } = this.props;
+    const { Component, pageProps, store } = this.props;
 
     return (
       <Container>
-        <Component {...pageProps} />
+        <Provider store={store}>
+          <Component {...pageProps} />
+        </Provider>
       </Container>
     );
   }
 }
 
-export default MyApp;
+export default withRedux(configureStore)(MyApp);
