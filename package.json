@@ -13,7 +13,7 @@
   "author": "yangtopia@gmail.com",
   "dependencies": {
     "@zeit/next-css": "^1.0.1",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "next": "^9.0.2",
     "next-redux-wrapper": "^3.0.0-alpha.3",
     "normalize.css": "^8.0.1",
